@@ -1,0 +1,39 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/main_nav.ejs') %>
+
+<main class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">Welcome to <%= title %> page</h1>
+    <p>Contact Us</p>
+  </div>
+<!--
+    Athina kizhekechamakalayil rajesh
+    contact.ejs
+    301368666
+    25-01-24
+      -->
+  <!-- Contact Form -->
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="/contact" method="POST">
+      <label for="title">Message Title:</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="body">Message Body:</label>
+      <textarea id="body" name="body" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</main>
+
+<!-- Bottom Nav -->
+<%- include ('partials/bottom_nav.ejs') %>
+
+<!-- Footer -->
+<%- include ('partials/footer.ejs') %>
+
+   
